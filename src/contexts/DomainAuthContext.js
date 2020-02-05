@@ -1,21 +1,19 @@
-import React, {useState, useEffect, useCallback} from 'react';
-
-import {useAppState} from 'react-native-hooks';
+import React, {useState, useCallback} from 'react';
 
 import querystring from 'querystring';
 import {encode as btoa} from 'base-64';
 
-// const CLIENT_KEY = 'client_a368a89e8edf072518d02c827162f5e9';
-// const SECRET_KEY = 'secret_4a4f05f1a3fb14b7268147a2add66ce2';
-const CLIENT_KEY = 'client_e7ad612e01855261995ff0cfa65202b4';
-const SECRET_KEY = 'secret_b7914b696182dac38c6a7581a9b58c26';
+const CLIENT_KEY = 'client_a368a89e8edf072518d02c827162f5e9';
+const SECRET_KEY = 'secret_4a4f05f1a3fb14b7268147a2add66ce2';
+// const CLIENT_KEY = 'client_e7ad612e01855261995ff0cfa65202b4';
+// const SECRET_KEY = 'secret_b7914b696182dac38c6a7581a9b58c26';
 
 const AUTH_ENDPOINT = 'https://auth.domain.com.au/v1/connect/token';
 const REQUIRED_SCOPES = 'api_listings_read';
 
 const DomainAuthContext = React.createContext({});
 
-const fetchAccessToken = () => {
+const fetchAccessToken = async () => {
   const options = {
     method: 'POST',
     headers: {
@@ -37,16 +35,14 @@ const DomainAuthProvider = ({children}) => {
   const getAccessToken = useCallback(async () => {
     if (tokenExpiry < Date.now()) {
       const response = await fetchAccessToken();
+      const data = await response.json();
       if (response.ok) {
-        const {
-          access_token: accessToken,
-          expires_in: expiresInSeconds,
-        } = await response.json();
+        const {access_token: accessToken, expires_in: expiresInSeconds} = data;
         setToken(accessToken);
         setTokenExpiry(Date.now() + expiresInSeconds * 1000);
         return accessToken;
       } else {
-        throw new Error('Failed to get access token');
+        throw new Error('Failed to get access token:', data);
       }
     }
     return token;
@@ -64,13 +60,10 @@ const DomainAuthProvider = ({children}) => {
             ...options.headers,
           }
         : defaultHeaders;
-      console.log('FETCH - ', url, options, headers);
       return fetch(url, {...options, headers});
     },
     [getAccessToken],
   );
-
-  console.log('token', token);
 
   return (
     <DomainAuthContext.Provider

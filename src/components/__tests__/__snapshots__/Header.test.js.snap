@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header back button shows when previous route exists 1`] = `
+<TouchableHighlight
+  accessibilityComponentType="button"
+  accessibilityLabel="Back"
+  accessibilityRole="button"
+  accessibilityStates={Array []}
+  accessibilityTraits="button"
+  activeOpacity={0.85}
+  centered={true}
+  delayPressOut={100}
+  disabled={false}
+  hitSlop={
+    Object {
+      "bottom": 6,
+      "left": 6,
+      "right": 6,
+      "top": 6,
+    }
+  }
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "margin": 6,
+          "overflow": "hidden",
+        },
+        Object {
+          "borderRadius": 18,
+          "height": 36,
+          "width": 36,
+        },
+        undefined,
+        undefined,
+      ],
+    ]
+  }
+  underlayColor="rgba(255, 255, 255, 0.16)"
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+          Object {
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "transform": Array [
+              Object {
+                "rotate": "0deg",
+              },
+            ],
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+              Object {
+                "height": 24,
+                "transform": Array [
+                  Object {
+                    "scaleX": 1,
+                  },
+                ],
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "testUri": "../../react-native-paper/lib/commonjs/assets/back-chevron.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 21,
+                  "resizeMode": "contain",
+                  "width": 21,
+                },
+                Object {
+                  "tintColor": "#ffffff",
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</TouchableHighlight>
+`;
+
+exports[`Header matches snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <SafeAreaView
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#6200ee",
+          "elevation": 4,
+          "zIndex": 0,
+        },
+        Object {
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 0,
+          },
+          "shadowOpacity": 0.24,
+          "shadowRadius": 4,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#6200ee",
+          "elevation": 0,
+          "flexDirection": "row",
+          "height": 56,
+          "marginTop": 0,
+          "paddingHorizontal": 4,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "width": 48,
+          }
+        }
+      />
+      <TouchableWithoutFeedback>
+        <View
+          style={
+            Array [
+              Object {
+                "flex": 1,
+                "paddingHorizontal": 12,
+              },
+              Array [
+                false,
+                Object {
+                  "alignItems": "center",
+                },
+                undefined,
+              ],
+            ]
+          }
+        >
+          <Text
+            accessibilityRole="header"
+            accessibilityTraits="header"
+            accessible={true}
+            numberOfLines={1}
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontWeight": "400",
+                  "textAlign": "left",
+                },
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                  },
+                  Object {
+                    "fontSize": 17,
+                  },
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Awesome App
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <View
+        style={
+          Object {
+            "width": 48,
+          }
+        }
+      />
+    </View>
+  </SafeAreaView>
+</View>
+`;

@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuburbSearch search and select a suburb 1`] = `
+Array [
+  Array [
+    "https://auth.domain.com.au/v1/connect/token",
+    Object {
+      "body": "grant_type=client_credentials&scope=api_listings_read",
+      "headers": Object {
+        "authorization": "Basic Y2xpZW50X2EzNjhhODllOGVkZjA3MjUxOGQwMmM4MjcxNjJmNWU5OnNlY3JldF80YTRmMDVmMWEzZmIxNGI3MjY4MTQ3YTJhZGQ2NmNlMg==",
+        "content-type": "application/x-www-form-urlencoded",
+      },
+      "method": "POST",
+    },
+  ],
+  Array [
+    "https://api.domain.com.au/v1/listings/locations?terms=mel%20burn",
+    Object {
+      "headers": Object {
+        "authorization": "Bearer 696969",
+      },
+      "method": "GET",
+    },
+  ],
+]
+`;
+
+exports[`SuburbSearch search and select a suburb 2`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 4,
+        "elevation": 4,
+        "flexDirection": "row",
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 4,
+      }
+    }
+  >
+    <TouchableHighlight
+      accessibilityComponentType="button"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessibilityTraits="button"
+      activeOpacity={0.85}
+      centered={true}
+      delayPressOut={100}
+      disabled={true}
+      hitSlop={
+        Object {
+          "bottom": 6,
+          "left": 6,
+          "right": 6,
+          "top": 6,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "margin": 6,
+              "overflow": "hidden",
+            },
+            Object {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            },
+            undefined,
+            undefined,
+          ],
+        ]
+      }
+      underlayColor="rgba(0, 0, 0, 0.16)"
+    >
+      <View>
+        <Text
+          accessibilityElementsHidden={true}
+          allowFontScaling={false}
+          importantForAccessibility="no-hide-descendants"
+          pointerEvents="none"
+          style={
+            Array [
+              Object {
+                "color": "rgba(0, 0, 0, 0.54)",
+                "fontSize": 24,
+              },
+              Array [
+                Object {
+                  "transform": Array [
+                    Object {
+                      "scaleX": 1,
+                    },
+                  ],
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+              ],
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </TouchableHighlight>
+    <TextInput
+      accessibilityRole="search"
+      accessibilityTraits="search"
+      allowFontScaling={true}
+      autoFocus={true}
+      keyboardAppearance="light"
+      placeholder="Search"
+      placeholderTextColor="rgba(0, 0, 0, 0.54)"
+      rejectResponderTermination={true}
+      returnKeyType="search"
+      selectionColor="#6200ee"
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "flex": 1,
+            "fontSize": 18,
+            "minWidth": 0,
+            "paddingLeft": 8,
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value="Mel burn"
+    />
+    <TouchableHighlight
+      accessibilityComponentType="button"
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessibilityTraits="button"
+      activeOpacity={0.85}
+      centered={true}
+      delayPressOut={100}
+      disabled={false}
+      hitSlop={
+        Object {
+          "bottom": 6,
+          "left": 6,
+          "right": 6,
+          "top": 6,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "margin": 6,
+              "overflow": "hidden",
+            },
+            Object {
+              "borderRadius": 18,
+              "height": 36,
+              "width": 36,
+            },
+            false,
+            undefined,
+          ],
+        ]
+      }
+      underlayColor="rgba(0, 0, 0, 0.16)"
+    >
+      <View>
+        <Text
+          accessibilityElementsHidden={true}
+          allowFontScaling={false}
+          importantForAccessibility="no-hide-descendants"
+          pointerEvents="none"
+          style={
+            Array [
+              Object {
+                "color": "rgba(0, 0, 0, 0.54)",
+                "fontSize": 24,
+              },
+              Array [
+                Object {
+                  "transform": Array [
+                    Object {
+                      "scaleX": 1,
+                    },
+                  ],
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                },
+              ],
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </TouchableHighlight>
+  </View>
+  <ScrollView
+    data={
+      Array [
+        Object {
+          "name": "Melbourne",
+          "postcode": "3000",
+          "region": "Greater Melbourne",
+          "state": "vic",
+          "type": "suburb",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyboardShouldPersistTaps="handled"
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={false}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View
+      style={null}
+    >
+      <TouchableHighlight
+        accessibilityLabel="select Melbourne"
+        activeOpacity={0.85}
+        delayPressOut={100}
+        descriptionNumberOfLines={2}
+        disabled={false}
+        style={
+          Array [
+            false,
+            Array [
+              Object {
+                "padding": 8,
+              },
+              undefined,
+            ],
+          ]
+        }
+        underlayColor="rgba(0, 0, 0, 0.1)"
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "marginVertical": 6,
+                  "paddingLeft": 8,
+                },
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 16,
+                    },
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                    },
+                    undefined,
+                  ],
+                ]
+              }
+            >
+              Melbourne
+            </Text>
+            <Text
+              numberOfLines={2}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 14,
+                    },
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                    },
+                    undefined,
+                  ],
+                ]
+              }
+            >
+              Greater Melbourne, 3000
+            </Text>
+          </View>
+        </View>
+      </TouchableHighlight>
+    </View>
+  </ScrollView>
+</View>
+`;

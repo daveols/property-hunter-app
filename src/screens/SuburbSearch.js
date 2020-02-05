@@ -5,11 +5,10 @@ import {Searchbar, ActivityIndicator, List} from 'react-native-paper';
 
 import {useSuburbSearch} from '../hooks';
 
-const SuburbSearch = ({navigation, ...rest}) => {
+const SuburbSearch = ({navigation}) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const routes = useNavigationState(state => state.routes);
-  console.log(routes);
 
   const {
     search: searchSuburbs,
@@ -47,6 +46,7 @@ const SuburbSearch = ({navigation, ...rest}) => {
             title={suburb.name}
             description={`${suburb.region}, ${suburb.postcode}`}
             onPress={() => setSelectedSuburb(suburb)}
+            accessibilityLabel={`select ${suburb.name}`}
           />
         )}
         keyExtractor={(_, i) => `suburb-${i}`}

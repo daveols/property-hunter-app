@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {CommonActions} from '@react-navigation/native';
 
 import {StyleSheet, FlatList} from 'react-native';
@@ -9,6 +9,7 @@ import {useListingsNearSuburbSearch} from '../hooks';
 import ListingCard from '../components/ListingCard';
 
 const Home = ({navigation, route: {params}}) => {
+  const [prevSelectedSuburb, setPrevSelectedSuburb] = useState();
   const {
     search: searchListings,
     loading: isLoadingListings,
@@ -19,8 +20,11 @@ const Home = ({navigation, route: {params}}) => {
     params && params.selectedSuburb ? params.selectedSuburb : undefined;
 
   useEffect(() => {
-    searchListings(selectedSuburb);
-  }, [searchListings, selectedSuburb]);
+    if (selectedSuburb !== prevSelectedSuburb) {
+      setPrevSelectedSuburb(selectedSuburb);
+      searchListings(selectedSuburb);
+    }
+  }, [prevSelectedSuburb, searchListings, selectedSuburb]);
 
   const clearSuburb = () => {
     navigation.dispatch(CommonActions.setParams({selectedSuburb: undefined}));
@@ -45,7 +49,7 @@ const Home = ({navigation, route: {params}}) => {
         </>
       ) : (
         <Subheading style={styles.noSuburbHeadline}>
-          Search for a suburb to find your nearby dream home!
+          Search suburbs to find your dream home!
         </Subheading>
       )}
     </>

@@ -29,7 +29,6 @@ export const useListingsNearSuburbSearch = () => {
       };
 
       setLoading(true);
-
       try {
         const response = await post(
           `${RESIDENTIAL_SEARCH_ENDPOINT}`,

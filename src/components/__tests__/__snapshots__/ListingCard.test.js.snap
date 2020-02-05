@@ -1,0 +1,621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListingCard renders listing correctly - android 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 4,
+        "elevation": 1,
+        "margin": 16,
+        "marginVertical": 8,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 0.75,
+      }
+    }
+  >
+    <TouchableWithoutFeedback
+      delayPressIn={0}
+      disabled={true}
+    >
+      <View
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#eeeeee",
+                "height": 195,
+                "overflow": "hidden",
+              },
+              Object {
+                "borderTopLeftRadius": 4,
+                "borderTopRightRadius": 4,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            siblings={
+              Array [
+                "withTheme(Card.Cover)",
+                "withTheme(Card.Title)",
+              ]
+            }
+            source={
+              Object {
+                "uri": "https://sweetmelbournepics.com.au/hosier-lane.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                  "height": undefined,
+                  "justifyContent": "flex-end",
+                  "padding": 16,
+                  "resizeMode": "cover",
+                  "width": undefined,
+                },
+                Object {
+                  "borderTopLeftRadius": 4,
+                  "borderTopRightRadius": 4,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "paddingLeft": 16,
+              },
+              Object {
+                "height": 72,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "height": 50,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontFamily": "System",
+                      "fontWeight": "500",
+                      "textAlign": "left",
+                      "writingDirection": "ltr",
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 20,
+                        "letterSpacing": 0.15,
+                        "lineHeight": 30,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "minHeight": 30,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                        undefined,
+                      ],
+                    ],
+                    Array [
+                      Object {
+                        "fontSize": 20,
+                        "letterSpacing": 0.15,
+                        "lineHeight": 30,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "minHeight": 30,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                        undefined,
+                      ],
+                    ],
+                  ],
+                ]
+              }
+            >
+              69 Hosier Lane
+            </Text>
+            <Text
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "fontFamily": "System",
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                      "writingDirection": "ltr",
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "letterSpacing": 0.4,
+                        "lineHeight": 20,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "marginVertical": 0,
+                          "minHeight": 20,
+                        },
+                        undefined,
+                      ],
+                    ],
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "letterSpacing": 0.4,
+                        "lineHeight": 20,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "marginVertical": 0,
+                          "minHeight": 20,
+                        },
+                        undefined,
+                      ],
+                    ],
+                  ],
+                ]
+              }
+            >
+              Melbourne
+            </Text>
+          </View>
+          <View />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;
+
+exports[`ListingCard renders listing correctly - ios 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "borderRadius": 4,
+        "elevation": 1,
+        "margin": 16,
+        "marginVertical": 8,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 0.5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.24,
+        "shadowRadius": 0.75,
+      }
+    }
+  >
+    <TouchableWithoutFeedback
+      delayPressIn={0}
+      disabled={true}
+    >
+      <View
+        style={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#eeeeee",
+                "height": 195,
+                "overflow": "hidden",
+              },
+              Object {
+                "borderTopLeftRadius": 4,
+                "borderTopRightRadius": 4,
+              },
+              undefined,
+            ]
+          }
+        >
+          <Image
+            siblings={
+              Array [
+                "withTheme(Card.Cover)",
+                "withTheme(Card.Title)",
+                "Card.Content",
+              ]
+            }
+            source={
+              Object {
+                "uri": "https://sweetmelbournepics.com.au/hosier-lane.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                  "height": undefined,
+                  "justifyContent": "flex-end",
+                  "padding": 16,
+                  "resizeMode": "cover",
+                  "width": undefined,
+                },
+                Object {
+                  "borderTopLeftRadius": 4,
+                  "borderTopRightRadius": 4,
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "paddingLeft": 16,
+              },
+              Object {
+                "height": 72,
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "height": 50,
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontFamily": "System",
+                      "fontWeight": "500",
+                      "textAlign": "left",
+                      "writingDirection": "ltr",
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 20,
+                        "letterSpacing": 0.15,
+                        "lineHeight": 30,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "minHeight": 30,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                        undefined,
+                      ],
+                    ],
+                    Array [
+                      Object {
+                        "fontSize": 20,
+                        "letterSpacing": 0.15,
+                        "lineHeight": 30,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "minHeight": 30,
+                        },
+                        Object {
+                          "marginBottom": 0,
+                        },
+                        undefined,
+                      ],
+                    ],
+                  ],
+                ]
+              }
+            >
+              69 Hosier Lane
+            </Text>
+            <Text
+              numberOfLines={1}
+              style={
+                Array [
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                  },
+                  Array [
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "fontFamily": "System",
+                      "fontWeight": "400",
+                      "textAlign": "left",
+                      "writingDirection": "ltr",
+                    },
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "letterSpacing": 0.4,
+                        "lineHeight": 20,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "marginVertical": 0,
+                          "minHeight": 20,
+                        },
+                        undefined,
+                      ],
+                    ],
+                    Array [
+                      Object {
+                        "fontSize": 12,
+                        "letterSpacing": 0.4,
+                        "lineHeight": 20,
+                        "marginVertical": 2,
+                      },
+                      Array [
+                        Object {
+                          "marginVertical": 0,
+                          "minHeight": 20,
+                        },
+                        undefined,
+                      ],
+                    ],
+                  ],
+                ]
+              }
+            >
+              Melbourne
+            </Text>
+          </View>
+          <View />
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "paddingHorizontal": 16,
+              },
+              Object {
+                "paddingBottom": 16,
+              },
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#9e9e9e",
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 4,
+                },
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontWeight": "400",
+                  "textAlign": "left",
+                },
+                Array [
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                    "writingDirection": "ltr",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 12,
+                      "letterSpacing": 0.4,
+                      "lineHeight": 20,
+                      "marginVertical": 2,
+                    },
+                    Object {
+                      "marginRight": 16,
+                    },
+                  ],
+                  Array [
+                    Object {
+                      "fontSize": 12,
+                      "letterSpacing": 0.4,
+                      "lineHeight": 20,
+                      "marginVertical": 2,
+                    },
+                    Object {
+                      "marginRight": 16,
+                    },
+                  ],
+                ],
+              ]
+            }
+          >
+            6
+          </Text>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#9e9e9e",
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 4,
+                },
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "System",
+                  "fontWeight": "400",
+                  "textAlign": "left",
+                },
+                Array [
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "fontFamily": "System",
+                    "fontWeight": "400",
+                    "textAlign": "left",
+                    "writingDirection": "ltr",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 12,
+                      "letterSpacing": 0.4,
+                      "lineHeight": 20,
+                      "marginVertical": 2,
+                    },
+                    Object {
+                      "marginRight": 16,
+                    },
+                  ],
+                  Array [
+                    Object {
+                      "fontSize": 12,
+                      "letterSpacing": 0.4,
+                      "lineHeight": 20,
+                      "marginVertical": 2,
+                    },
+                    Object {
+                      "marginRight": 16,
+                    },
+                  ],
+                ],
+              ]
+            }
+          >
+            9
+          </Text>
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;
